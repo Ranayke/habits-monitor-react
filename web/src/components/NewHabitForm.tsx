@@ -21,6 +21,7 @@ export function NewHabitForm() {
     event.preventDefault();
 
     if (!title || weekDays.length === 0) {
+      alert('Preencha os campos necessários')
       return;
     }
 

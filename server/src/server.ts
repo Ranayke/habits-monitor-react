@@ -13,5 +13,5 @@ app.register(appRoutes)
 app.listen({
     port,
 }).then(() => {
-    console.log(`HTTP Server running at localhost:${port}/`)
+    console.log(`HTTP Server running at localhost:${port}`)
 })
