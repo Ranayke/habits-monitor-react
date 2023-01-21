@@ -12,7 +12,7 @@ import dayjs from "dayjs";
 
 const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
 const datesFromYearStart = generateDates();
-const minimunSummaryDatesSizes = 18 * 5;
+const minimunSummaryDatesSizes = 18 * 7;
 const amountOfDaysToFill = minimunSummaryDatesSizes - datesFromYearStart.length;
 
 type SummaryProps = Array<{
@@ -45,7 +45,7 @@ export function Home() {
     fetchData();
   }, []);
 
-  if (!loading) {
+  if (loading) {
     return <Loading />;
   }
 
